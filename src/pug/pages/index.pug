@@ -1,4 +1,5 @@
 extends ../includes/layout.pug
+include ../includes/components/header_poster.pug
 block metatags
   -var title= 'M A R A T O N - 4 2. 1 9 5 km'
   -var description= 'Bienvenid@s en este sitio encontraras informacion sobre el marviloso mundo de los Maratones.'
@@ -8,4 +9,5 @@ block metatags
 
 block content
   main.Home.u-afterFixed
+   +headerPoster('./img/home-lady-runner.jpg', 'Si entrenas tu mente para correr,', 'todo lo demás será fácil.')
     p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt illum debitis modi dolores quod asperiores eum porro rerum autem, consequatur maxime quas amet! Pariatur voluptates sapiente temporibus, tenetur praesentium mollitia.

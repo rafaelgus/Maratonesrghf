@@ -3178,7 +3178,7 @@ img {
   transition: all .3s ease-out;
   background-color: rgba(23, 18, 38, 0.9); }
   .Header.is-active {
-    background-color: rgba(23, 18, 38, 0.9); }
+    background-color: rgba(23, 18, 38, 0); }
   .Header-container {
     margin: auto;
     max-width: 1200px;
@@ -3263,6 +3263,27 @@ img {
       border-top: medium solid #FFF;
       background-color: transparent; } }
 
+.Poster {
+  width: 100%;
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .Poster--opacity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    min-height: inherit;
+    background-color: rgba(23, 18, 38, 0.5); }
+  .Poster-title {
+    padding: 0 3vh;
+    font-size: 5vw;
+    text-align: center;
+    letter-spacing: 2vw;
+    color: #FFF; }
+
 /**
 *   @fileoverview
 *     Componente para incrustar un video de YouTube en nuestro sitio web cuando la resolución es mayor a 64em (1024px), cuando es menor se agrega un enlace al video
@@ -3300,3 +3321,10 @@ img {
     text-align: center;
     text-decoration: none;
     font-size: 3.5vw; }
+
+.Home {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(8, auto); }
+  .Home .Poster-title {
+    letter-spacing: 0; }

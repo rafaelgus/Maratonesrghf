@@ -61,7 +61,7 @@ $hamburger-color: #0096D9;
     transition: all .3s ease-out;
     background-color: $header-bg-op-1;
     &.is-active {
-        background-color: $header-bg-op-1;
+        background-color: $header-bg-op-0;
     }
     &-container {
         margin: auto;
