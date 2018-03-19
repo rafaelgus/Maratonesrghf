@@ -59,9 +59,9 @@ $hamburger-color: #0096D9;
     width: 100%;
     height: $header-height;
     transition: all .3s ease-out;
-    background-color: $header-bg-op-1;
+    background-color: $header-bg-op-0;
     &.is-active {
-        background-color: $header-bg-op-0;
+        background-color: $header-bg-op-1;
     }
     &-container {
         margin: auto;

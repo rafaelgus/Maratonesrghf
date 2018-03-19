@@ -3176,9 +3176,9 @@ img {
   width: 100%;
   height: 4rem;
   transition: all .3s ease-out;
-  background-color: rgba(23, 18, 38, 0.9); }
+  background-color: rgba(23, 18, 38, 0); }
   .Header.is-active {
-    background-color: rgba(23, 18, 38, 0); }
+    background-color: rgba(23, 18, 38, 0.9); }
   .Header-container {
     margin: auto;
     max-width: 1200px;
@@ -3283,6 +3283,21 @@ img {
     text-align: center;
     letter-spacing: 2vw;
     color: #FFF; }
+
+.Sentence {
+  padding: 1rem;
+  color: #FFF;
+  text-align: center;
+  font-size: 4vw;
+  font-family: 'Permanent Marker', sans-serif; }
+  .Sentence cite {
+    font-size: 3vw; }
+
+@media screen and (min-width: 64em) {
+  .Sentence {
+    font-size: 3vw; }
+    .Sentence cite {
+      font-size: 2vw; } }
 
 /**
 *   @fileoverview
