@@ -3337,6 +3337,95 @@ img {
     text-decoration: none;
     font-size: 3.5vw; }
 
+.VideoHeader {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; }
+  .VideoHeader-text {
+    position: absolute;
+    top: 30vh;
+    height: auto;
+    width: 100%;
+    padding: 1rem;
+    font-weight: bold;
+    text-align: center;
+    color: #FFF; }
+    .VideoHeader-text > h2 {
+      font-size: 8vw;
+      margin: 1rem auto; }
+    .VideoHeader-text > h3 {
+      font-size: 4vw; }
+      @media screen and (min-width: 64em) {
+        .VideoHeader-text > h3 {
+          font-size: 2.5vw; } }
+
+.ContactForm {
+  padding: 2rem; }
+  .ContactForm-title {
+    font-size: 10vw;
+    color: #FFF; }
+    @media screen and (min-width: 64em) {
+      .ContactForm-title {
+        font-size: 5vw; } }
+  .ContactForm [required]:invalid {
+    background-color: rgba(220, 20, 60, 0.2); }
+  .ContactForm [required]:valid {
+    background-color: rgba(60, 179, 113, 0.2); }
+  .ContactForm [required]:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    outline: 0; }
+  .ContactForm > input,
+  .ContactForm > textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+    border: 0;
+    border-bottom: medium solid #0096D9;
+    background-color: transparent;
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: bold;
+    resize: none; }
+  .ContactForm > input[type="submit"] {
+    margin: 2rem auto 0;
+    font-size: 2rem;
+    border: medium solid transparent;
+    background-color: #0096D9;
+    color: #FFF;
+    transition: all .3s ease-out; }
+    @media screen and (min-width: 48em) {
+      .ContactForm > input[type="submit"] {
+        width: 70%; } }
+    .ContactForm > input[type="submit"]:hover {
+      cursor: pointer;
+      background-color: #FFF;
+      color: #0096D9;
+      border: medium solid #0096D9; }
+  .ContactForm > *::-webkit-input-placeholder {
+    color: #FFF;
+    font-family: 'Montserrat';
+    font-size: 1.5rem;
+    font-weight: bold; }
+
+.SocialMedia-list {
+  display: flex;
+  justify-content: space-around; }
+
+.SocialMedia-item {
+  list-style-type: none; }
+
+.SocialMedia-link {
+  font-size: 10vw;
+  color: #FFF; }
+  .SocialMedia-link:hover {
+    color: #0096D9; }
+  @media screen and (min-width: 48em) {
+    .SocialMedia-link {
+      font-size: 5vw; } }
+
 .Home {
   display: grid;
   grid-template-columns: 1fr;
@@ -3613,6 +3702,33 @@ img {
           width: auto; }
       .Collage2 p:last-child {
         margin: 0; } }
+
+.Contact {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("./img/contacto-hola.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: 'video' 'info' 'map'; }
+  @media screen and (min-width: 64em) {
+    .Contact {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 100vh 1fr;
+      grid-template-areas: 'video video video' 'map info info'; } }
+  .Contact-video {
+    grid-area: video; }
+  .Contact-info {
+    grid-area: info;
+    width: inherit;
+    min-height: inherit;
+    background-color: rgba(23, 18, 38, 0.5); }
+
+.GoogleMap {
+  grid-area: map; }
 
 .u-center {
   text-align: center; }
