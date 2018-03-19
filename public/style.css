@@ -3343,3 +3343,115 @@ img {
   grid-template-rows: repeat(8, auto); }
   .Home .Poster-title {
     letter-spacing: 0; }
+
+.About {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(3, fit-content);
+  grid-gap: 2rem;
+  justify-items: center; }
+
+.MarathonHistory {
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(13, fit-content);
+  grid-gap: 1vw;
+  grid-auto-flow: row dense;
+  color: #FFF; }
+  .MarathonHistory-item {
+    border: medium solid #FFF;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; }
+    .MarathonHistory-item img {
+      flex: auto;
+      object-fit: cover;
+      transition: all 1s ease-out; }
+      .MarathonHistory-item img:hover {
+        transform: scale(1.5); }
+    .MarathonHistory-item p {
+      flex: auto;
+      padding: 1rem;
+      font-size: 3vw; }
+      @media screen and (min-width: 64em) {
+        .MarathonHistory-item p {
+          font-size: 2vw; } }
+
+.WindowGallery {
+  display: grid;
+  grid-template-columns: repeat(4, 25vw);
+  grid-template-rows: repeat(4, 25vw); }
+  @media screen and (min-width: 64em) {
+    .WindowGallery {
+      grid-template-columns: repeat(4, 12.5vw);
+      grid-template-rows: repeat(4, 12.5vw); } }
+  .WindowGallery-item {
+    overflow: hidden; }
+    .WindowGallery-item:nth-of-type(1) {
+      grid-row: 1 / 3;
+      grid-column: 1 / 3; }
+    .WindowGallery-item:nth-of-type(2) {
+      grid-row: 1 / 3;
+      grid-column: 3 / 5; }
+    .WindowGallery-item:nth-of-type(3) {
+      grid-row: 3 / 5;
+      grid-column: 1 / 3; }
+    .WindowGallery-item:nth-of-type(4) {
+      grid-row: 3 / 5;
+      grid-column: 3 / 5; }
+  .WindowGallery-image {
+    max-width: none;
+    width: auto;
+    height: 100%;
+    object-fit: contain;
+    object-position: 50% 50%;
+    transition: all .5s ease-in; }
+    .WindowGallery-image:hover {
+      filter: grayscale(1); }
+  .WindowGallery-title, .WindowGallery-clipPath {
+    z-index: 1;
+    grid-row: 2 / 4;
+    grid-column: 2 / 4;
+    align-self: center;
+    text-align: center; }
+  .WindowGallery-clipPath {
+    background-color: rgba(0, 150, 217, 0.5);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); }
+    .WindowGallery-clipPath:before {
+      display: block;
+      content: '';
+      width: 100%;
+      padding-top: 100%; }
+  .WindowGallery-title {
+    z-index: 2;
+    font-size: 2.5vw;
+    color: #FFF; }
+
+.u-center {
+  text-align: center; }
+
+.u-flexCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+.c1xr1 {
+  grid-column: span 1;
+  grid-row: span 1; }
+
+.c1xr2 {
+  grid-column: span 1;
+  grid-row: span 2; }
+
+.c2xr1 {
+  grid-column: span 2;
+  grid-row: span 1; }
+
+.c2xr2 {
+  grid-column: span 2;
+  grid-row: span 2; }
+
+.c3xr1 {
+  grid-column: span 3;
+  grid-row: span 1; }
