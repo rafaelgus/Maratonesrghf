@@ -1,5 +1,5 @@
 {
-  "name": "kenai-npm-starter-kit",
+  "name": "rghf-npm-starter-kit",
   "version": "1.0.0",
   "description": "Kit de inicio para desarrollo frontend basado en componentes (Pug, Sass y JS)  y automatizado con Scripts NPM",
   "main": "package.json",
@@ -34,23 +34,24 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jonmircha/kenai-npm-starter-kit.git"
+    "url": "git+https://github.com/rafaelgus/Proyect01cssgridandflexbox.git"
   },
   "keywords": [
-    "jonmircha",
-    "kenai devtools",
+    "rafael herrera",
+    "rafaelgus",
+    "rghf devtools",
     "devtools",
     "starter kit",
     "npm",
     "npm scripts",
     "web components"
   ],
-  "author": "Jonathan MirCha <jonmircha@gmail.com>",
+  "author": "Rafael Herrera <rafaelgustavo1712@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jonmircha/kenai-npm-starter-kit/issues"
+    "url": "https://github.com/rafaelgus/Proyect01cssgridandflexbox/issues"
   },
-  "homepage": "https://github.com/jonmircha/kenai-npm-starter-kit#readme",
+  "homepage": "https://github.com/rafaelgus/Proyect01cssgridandflexbox#readme",
   "devDependencies": {
     "autoprefixer": "^7.0.0",
     "babel-cli": "^6.24.0",
