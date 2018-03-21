@@ -3360,6 +3360,26 @@ img {
         .VideoHeader-text > h3 {
           font-size: 2.5vw; } }
 
+.GoogleMap {
+  width: inherit;
+  height: inherit;
+  text-align: center;
+  background-color: rgba(23, 18, 38, 0.5); }
+  @media screen and (min-width: 64em) {
+    .GoogleMap {
+      display: flex; } }
+  .GoogleMap a {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 7.5vw;
+    font-weight: bold;
+    color: #FFF; }
+    .GoogleMap a:hover {
+      color: #0096D9; }
+  .GoogleMap iframe {
+    width: inherit;
+    height: inherit; }
+
 .ContactForm {
   padding: 2rem; }
   .ContactForm-title {
@@ -3424,7 +3444,7 @@ img {
     color: #0096D9; }
   @media screen and (min-width: 48em) {
     .SocialMedia-link {
-      font-size: 5vw; } }
+      font-size: 3vw; } }
 
 .Home {
   display: grid;
